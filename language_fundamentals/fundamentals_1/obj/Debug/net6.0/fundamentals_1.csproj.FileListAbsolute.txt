@@ -1,0 +1,15 @@
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\bin\Debug\net6.0\fundamentals_1.exe
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\bin\Debug\net6.0\fundamentals_1.deps.json
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\bin\Debug\net6.0\fundamentals_1.runtimeconfig.json
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\bin\Debug\net6.0\fundamentals_1.dll
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\bin\Debug\net6.0\fundamentals_1.pdb
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.csproj.AssemblyReference.cache
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.AssemblyInfoInputs.cache
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.AssemblyInfo.cs
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.csproj.CoreCompileInputs.cache
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.dll
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\refint\fundamentals_1.dll
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.pdb
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\fundamentals_1.genruntimeconfig.cache
+C:\Users\Duke\Desktop\Coding Dojo\C#\language_fundamentals\fundamentals_1\obj\Debug\net6.0\ref\fundamentals_1.dll

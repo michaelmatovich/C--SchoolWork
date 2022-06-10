@@ -1,0 +1,6 @@
+//making a file
+mkdir FirstCSharp
+cd FirstCSharp
+dotnet new console
+
+dotnet new console -o FirstCSharp
