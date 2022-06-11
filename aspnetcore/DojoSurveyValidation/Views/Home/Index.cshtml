@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Coder
+
+
+
+<div class="text-center">
+    <h1 class = "text-center">Survey</h1>
+</div>
+
+<div>
+        <form action="process" method = "post">
+            <div class="form-group">
+                <label for="Name">Your Name:</label>
+                <input asp-for="Name" class = "form-control">
+                <span asp-validation-for="Name" class = "text-danger"></span>
+            </div><br>            
+            <div class="form-group">
+                <label for="Location">Location:</label>
+                <input asp-for="Location" class = "form-control">
+                <span asp-validation-for="Location" class = "text-danger"></span>
+            </div><br>            
+            <div class="form-group">
+                <label for="FavLanguage">Favorite Language:</label>
+                <select asp-for = "FavLanguage" class = "form-control">
+                <option>C#</option>
+                <option>Python</option>
+                <option>React</option>
+                <option>JavaScript</option>
+                </select>
+                <span asp-validation-for="FavLanguage" class = "text-danger"></span>
+            </div><br>            
+            <div class = "form-group">
+                <label for="Comment">Comment (optional)</label>
+                <br>
+                <textarea asp-for = "Comment" rows = "5" cols = "30" class = "form-control mb-3"></textarea>
+                <span asp-validation-for="Comment" class = "text-danger"></span>                
+            </div>            
+            <input id = "submit" type="submit" value = "Submit" class = "btn btn-primary">
+        </form>
+    </div>
