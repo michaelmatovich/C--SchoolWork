@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p class = "text-center">Random passcode passcode #<span id = "span_ct">@Context.Session.GetInt32("Count")</span></p>
+<p class = "text-center">Passcode: <span id = "span_pc">@Context.Session.GetString("Passcode")</span></p>
+
+<div class = "text-center">
+    <button class = "btn btn-success" onclick = generate()>Generate</button>
+</div>
+
+<script>
+
+async function generate()
+{
+    let element = document.getElementById("span_pc");
+
+    let element2= document.getElementById("span_ct")
+
+    let result = await (await fetch ("GetPassword")).json();
+
+    element.innerText = result.password;
+
+    element2.innerText = result.counter;
+}
+</script>

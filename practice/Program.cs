@@ -1,9 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int[] test = new int[5];
 
+Random rdm = new Random();
 
-Console.WriteLine(test);
+string passcode = "";
+string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-for(int i = 0; i < 5; i++){
-    Console.WriteLine(test[i]);
+for(int i = 0; i < 14; i++)
+{
+    passcode = passcode + chars[rdm.Next(0,37)].ToString();
 }
+
+Console.WriteLine(passcode);
