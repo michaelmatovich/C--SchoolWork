@@ -1,13 +1,34 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+using System.Collections;
 
-Random rdm = new Random();
 
-string passcode = "";
-string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-for(int i = 0; i < 14; i++)
-{
-    passcode = passcode + chars[rdm.Next(0,37)].ToString();
-}
+    static bool Palindrome(string a){
 
-Console.WriteLine(passcode);
+        int first = 0;
+        int last = a.Length-1;
+
+        if(a.Length == 0){
+            return false;
+        }
+
+        for(int i = 0; i < a.Length/2; i++){
+            Console.Write($"First: {a[first]}, Last: {a[last]}, Index: {i}");
+            
+            if(a[first] != a[last]){
+                return false;
+            }
+            first++;
+            last--;
+        }
+
+        return true;
+    }
+
+
+Console.WriteLine(Palindrome("dot saw I was tod"));//expect true
+// Console.WriteLine(Palindrome("I think I like pizza"));//expect false
+// Console.WriteLine(Palindrome(""));//expect falsey? 
+// Console.WriteLine(Palindrome("bob"));//expect true
+
+

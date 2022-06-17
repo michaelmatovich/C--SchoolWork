@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/style.css">
+
+<div class = "container text-center">
+
+    <h1 class = "text-center mb-2">Magic 8 Ball</h1>
+    <p class = "text-center mb-5">Fortunes Received: <span id = "counter">@Context.Session.GetInt32("Count")</span></p>
+    <h2 class = "text-center">Ask a Question!</h2>
+    <input type="text" class = "text-center form-control mb-3">
+    <button onclick = generateFortune() class = "btn btn-primary mb-5">Ask the Magic 8 Ball</button>
+    <div class = "circle">
+        <span id = "fortune">8 Ball</span>
+    </div>
+
+</div>
+
+<script>
+    async function generateFortune()
+    {
+        let counter_element = document.getElementById("counter");
+        let fortune_element = document.getElementById("fortune");
+
+        let result = await (await fetch("GetFortune")).json();
+
+        counter_element.innerText = result.counter;
+        fortune_element.innerText = result.fortune;
+    }
+
+
+
+</script>

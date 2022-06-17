@@ -13,14 +13,15 @@
 
 async function generate()
 {
-    let element = document.getElementById("span_pc");
+    let spanCounter = document.getElementById("span_pc");
 
-    let element2= document.getElementById("span_ct")
+    let spanPasscode= document.getElementById("span_ct")
 
     let result = await (await fetch ("GetPassword")).json();
 
-    element.innerText = result.password;
+    spanCounter.innerText = result.password;
 
-    element2.innerText = result.counter;
+    spanPasscode.innerText = result.counter;
 }
 </script>
+
