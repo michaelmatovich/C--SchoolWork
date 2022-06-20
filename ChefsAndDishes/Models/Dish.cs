@@ -7,7 +7,7 @@ public class Dish
     public int DishId { get; set; }
     [Required]
     public string Name { get; set; }    
-    public int? ChefId  { get; set; }
+    public int ChefId { get; set; }
     [Required]
     public int Tastiness {get;set;}
     [Required]

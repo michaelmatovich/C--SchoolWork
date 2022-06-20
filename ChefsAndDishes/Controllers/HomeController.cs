@@ -48,9 +48,7 @@ public class HomeController : Controller
         {
             return View("ChefForm");
         }
-    }
-    
-    
+    }   
     /****************************************************
                         DISH ROUTE
     *****************************************************/    
@@ -75,6 +73,7 @@ public class HomeController : Controller
     [HttpPost("/dish/add/process")]
     public IActionResult AddDish(Dish newDish)
     {
+        
         if(ModelState.IsValid){
             _context.Add(newDish);
             _context.SaveChanges();
