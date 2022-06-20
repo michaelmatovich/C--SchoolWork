@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Dish
+
+
+<h3 class = "text-center">Add a Dish!</h3>
+<a href = "/">Home</a>
+
+<div>
+<form action = "/dish/add/process" method = "POST">
+    <div class = "form-group mt-5">
+        <label for="Name">Name of Dish</label>
+        <input asp-for="Name" class = "form-control">
+        <span asp-validation-for = "Name" class = "text-danger mb-3"></span>
+    </div>
+    <div class = "form-group">
+        <label for="Calories"># of Calories</label>
+        <input asp-for="Calories" class = "form-control">
+        <span asp-validation-for = "Calories" class = "text-danger mb-3"></span>
+    </div>
+    <div class = "form-group">
+        <label for="ChefId">Chef</label>
+        <select asp-for-ChefId class = "form-control">
+            @foreach(var c in ViewBag.AllChefs)
+            {
+                <option value="@c.ChefId">@c.FirstName @c.LastName</option>
+            }
+        </select>
+        <span asp-validation-for = "Chef" class = "text-danger mb-3"></span>
+    </div>
+    <div class = "form-group">
+        <label for="Tastiness">Tastiness</label>
+        <input asp-for="Tastiness" class = "form-control">
+        <span asp-validation-for = "Tastiness" class = "text-danger mb-3"></span>
+    </div>
+    <div class = "form-group">
+        <label for="Description">Description</label>
+        <input asp-for="Description" class = "form-control">
+        <span asp-validation-for = "Description" class = "text-danger mb-3"></span>
+    </div>
+    <div class = "form-group mt-5">
+        <input type="submit" value="Add Dish" class = "btn btn-primary">
+    </div>
+</form>
+</div>
