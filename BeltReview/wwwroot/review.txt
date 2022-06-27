@@ -1,0 +1,16 @@
+new project
+cd into project
+
+drop 2 entity frameworks in terminal
+model user - build what you can
+
+mode loguser - build what you can
+
+set up mycontext in program.cs, appsettings.json, and controller
+
+set up login/register (just do on separate pages)
+
+
+
+
+

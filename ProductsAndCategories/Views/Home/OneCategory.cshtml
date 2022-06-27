@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Association
+
+<h2 class = "text-center">@ViewBag.oneCategory.Name</h2>
+<div class = "d-flex text-center mt-3">
+    <div class = "col-6 text-center">
+        <h3>Categories</h3>
+        @{
+            foreach(var c in ViewBag.OneCategory.Products)
+            {
+                <p>@c.Product.Name</p>
+            }
+        }
+    </div>
+    <div class = "col-6 text-center">
+        <h3>Add Product</h3>
+        <form method = "post" action = "/category/update/@ViewBag.oneCategory.CategoryId">
+            <label>Name</label>
+            <select asp-for="ProductId">
+                @{
+                    foreach(var c in ViewBag.otherProducts)
+                    {
+                        <option value="@c.ProductId">@c.Name</option>
+                    }
+                }
+            </select>
+            <input type="submit" value="Add Product">
+        </form>
+    </div>
+
+
+
+</div>
